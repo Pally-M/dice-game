@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Palesa did the html and style.css , Joshua did script.js -->
+    <div class="title">
+        <h1>Dice Game</h1>
+    </div>    
+
+<!-- players container -->
+    <div class="container">
+        <div class="player-names">
+            <div>
+                <label for="player1">Player 1 Name:</label>
+                <input type="text" id="player1" value="">
+            </div>
+            <div>
+                <label for="player2">Player 2 Name:</label>
+                <input type="text" id="player2" value="">
+            </div>
+        </div>
+        <div class="dice-wrapper">
+            <img  id="dice-1" src="dice-1 (1).jpg" width="20%">
+            <img  id="dice-2" src="dice-1 (1).jpg" width="20%">
+        </div>        
+        <p id="total"></p>
+        <button onclick="roll()">Roll the dice</button>
+
+        
+    </div>
+    
+    <!-- Scoreboard table -->
+    <!-- the onclick button for restart -->
+    
+
+<section class="score">
+    <div class="container-2">
+        <div class="home home-bg">
+            <p id="player1-name">player1</p>
+            <div class="home-score">
+                <h2 class="score h-score">0</h2>
+            </div>
+        </div>
+        <div class="guest guest-bg">    
+            <p id="player2-name">player2</p>
+            <div class="guest-score">
+                <h2 class="score g-score">0</h2>
+            </div>
+        </div>
+    </section>  
+    
+    
+    <button id="btn" onclick="resetGame()">Restart</button>        
+      
+      
+    <script src="main.js"></script>
+</body>
+</html>
